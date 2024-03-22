@@ -1,3 +1,10 @@
+#!/bin/bash
+
+#SBATCH --partition=A40devel
+#SBATCH --time=1:00:00
+#SBATCH --gpus=1
+#SBATCH --ntasks=1
+
 export CUDA_VISIBLE_DEVICES=0
 
 model_name=PatchTST
